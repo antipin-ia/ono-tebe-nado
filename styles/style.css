@@ -1,1 +1,130 @@
 /* место для вашего кода */
+header {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo {
+    margin: 0 36px;
+    width: 148px;
+    height: 105px;
+    flex-shrink: 0;
+  }
+  
+  .contact-info {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    flex-grow: 1;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .cover {
+    position: relative;
+    background-image: url('../images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 757px;
+    max-width: 1100px;
+    margin: 96px auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 165px 50px 51px;
+    color: white;
+    overflow: hidden;
+    }
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный */
+  z-index: 1;
+}
+
+.cover-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+}
+  
+  h1 {
+    margin: 0;
+  line-height: 1.2;
+  font-size: 72px; /* Измените размер шрифта по необходимости */
+  letter-spacing: 10px; /* Межбуквенный интервал */
+  text-transform: uppercase;
+  color: white;
+  }
+
+  .cover-content_text_1 {
+    display: inline-block;
+    margin-left: 20px; /* Подберите значение для сдвига */
+  }
+  
+  .cover-content_text_2 {
+    display: inline-block;
+    margin-left: 40px; /* В два раза больше, чем у "ТЕБЕ" */
+  }
+  
+  .cover-subtext {
+    margin-top: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cover-subtext p {
+    margin: 0;
+    margin-right: 79px;
+  }
+  
+  #button-stav {
+    width: 256px;
+    height: 51px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px;
+}
