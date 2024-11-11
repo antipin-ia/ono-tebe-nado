@@ -143,9 +143,6 @@ h1 {
 }
 
 #button-stav {
-  position: absolute;
-  right: 50px;
-  bottom: 51px;
   width: 256px;
   height: 51px;
   background: transparent;
