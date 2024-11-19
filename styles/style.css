@@ -1,24 +1,18 @@
-body {
-  width: 1100px;
-  background-color: #f9f9f9;
-  font-family: 'Raleway', sans-serif;
-}
 
+/* Шапка */
 header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px 0;
   margin-top: 92px;
   width: 100%;
-  padding: 0 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-nav {
+.header_nav {
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 24px;
+  justify-content: flex-start;
 }
 
 .header-menu {
@@ -30,63 +24,74 @@ nav {
 
 .header-menu li {
   margin-right: 20px;
+  list-style-position: inside;
 }
 
 .header-menu li + li {
   list-style-type: circle;
+  list-style-position: inside;
 }
 
-.header-menu li:first-child {
-  list-style-type: none;
-}
-
-.header-menu a {
+.header__link {
   text-decoration: underline;
   color: black;
 }
 
-.header-menu li:first-child a {
+.header__link_active {
   text-decoration: none;
 }
 
 .logo {
   width: 148px;
   height: 105px;
-  flex-shrink: 0;
-  margin-right: 184px;
+  flex: 0 0 auto;
+  margin: 0 auto;
 }
 
 .header-info {
-  text-align: right;
+  flex: 1;
   font-style: normal;
   text-underline-offset: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
+.header-info p{
+  display: inline;
+  padding-left: 184px;
+  display: flex;
+}
+
+/* Основное содержимое */
+main {
+  width: 100%;
+}
+
+/* Секция cover */
 .cover {
   position: relative;
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  height: 757px;
+  min-height: 757px;
   width: 100%;
   margin: 96px auto 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 165px 50px 0;
+  padding: 165px 50px 50px;
   color: white;
-  overflow: hidden;
   margin-bottom: 179px;
 }
 
-.cover::before {
+.overlay::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -101,7 +106,6 @@ h1 {
   line-height: 1.2;
   font-size: 100px;
   width: 1000px;
-  height: 355px;
   letter-spacing: 10px;
   text-transform: uppercase;
   color: white;
@@ -110,27 +114,33 @@ h1 {
 .cover-content_text {
   display: inline-block;
   margin-left: 50px;
+  text-transform: uppercase;
 }
 
-.cover-content_text_1 {
-  display: inline-block;
-  margin-left: 336px;
+.cover-content_highlight {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
 
-.cover-content_text_2 {
-  display: inline-block;
-  margin-left: 633px;
+.cover-content_emphasis {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .letter-spacing {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .cover-subtext {
   margin-top: 147px;
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .cover-subtext p {
@@ -142,7 +152,7 @@ h1 {
   word-spacing: 20px;
 }
 
-#button-stav {
+.button-stav {
   width: 256px;
   height: 51px;
   background: transparent;
@@ -152,11 +162,14 @@ h1 {
   color: rgba(255, 255, 255, 1);
   text-align: center;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
 }
 
+/* Секция lots */
 .lots {
   text-align: center;
-  padding: 0 25px 0 25px;
+  width: 100%;
   margin-bottom: 146px;
 }
 
@@ -167,36 +180,33 @@ h1 {
   margin-left: 40px;
   text-align: left;
 }
+
 .lots-content {
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 25px; 
+}
+
+.lots-content a{
+  text-decoration: none;
 }
 
 .lot-card {
+  flex-grow: 1;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 572px;
   background-size: cover;
   background-position: center;
   color: white;
   padding: 51px 40px 48px;
-  margin-right: 25px;
   position: relative;
-  overflow: hidden;
-}
-
-.lot-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
 }
 
 .lot-card h3 {
@@ -214,6 +224,7 @@ h1 {
 }
 
 .lot-card p {
+  text-decoration: none;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -223,15 +234,15 @@ h1 {
   margin-right: 0;
 }
 
-.lot-card:nth-child(1) {
+.lot-card--film {
   background-image: url('../images/card-lot-01.jpg');
 }
 
-.lot-card:nth-child(2) {
+.lot-card--book {
   background-image: url('../images/card-lot-02.jpg');
 }
 
-.lot-card:nth-child(3) {
+.lot-card--painting {
   background-image: url('../images/card-lot-03.jpg');
 }
 
@@ -244,6 +255,7 @@ h1 {
   color: black;
 }
 
+/* Секция about */
 .about {
   display: flex;
   align-items: center;
@@ -281,14 +293,15 @@ h1 {
 .about-text h2 {
   font-size: 36px;
   margin-bottom: 100px;
+  text-transform: uppercase;
 }
 
 .about-text p {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 20px;
 }
 
+/* Подвал */
 footer {
   padding: 0 50px 0;
   display: flex;
@@ -334,14 +347,14 @@ footer {
   font-size: 18px;
 }
 
-.footer-menu li:first-child a {
-  text-decoration: none;
-}
-
 .footer-menu a {
   text-decoration: underline;
   color: black;
   text-align: center;
+}
+
+.footer-menu .footer__link_active{
+  text-decoration: none;
 }
 
 .social-icons {
