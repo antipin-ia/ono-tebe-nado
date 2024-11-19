@@ -183,7 +183,8 @@ h1 {
   justify-content: space-around;
   margin-bottom: 30px;
   flex-wrap: wrap;
-  gap: 25px; }
+  gap: 25px; 
+}
 
 .lots-content a {
   text-decoration: none;
@@ -248,7 +249,7 @@ h1 {
   font-weight: 400;
   color: black;
 }
-
+/*не понимаю что не так с этой секцией, я 100 раз все отступы перепроверил и все равно что-то не так*/
 .about {
   display: flex;
   align-items: center;
