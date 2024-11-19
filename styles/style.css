@@ -56,10 +56,9 @@ header {
   flex-direction: column;
 }
 
-.header-info p{
-  display: inline;
+.header-info p {
+  display: flex; /* Removed duplicate 'display: inline;' */
   padding-left: 184px;
-  display: flex;
 }
 
 /* Основное содержимое */
@@ -190,7 +189,7 @@ h1 {
   gap: 25px; 
 }
 
-.lots-content a{
+.lots-content a {
   text-decoration: none;
 }
 
@@ -206,7 +205,6 @@ h1 {
   background-position: center;
   color: white;
   padding: 51px 40px 48px;
-  position: relative;
 }
 
 .lot-card h3 {
