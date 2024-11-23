@@ -254,7 +254,7 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 1052px;
-  padding: 35px 0 180px 71px;
+  padding: 35px 0 180px 47px;
 }
 
 .about-content {
@@ -271,6 +271,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: content-box;
 }
 
 .about-logo {
@@ -279,7 +280,7 @@ h1 {
 }
 
 .about-text {
-  max-width: 693px;
+  max-width: 680px;
   padding-top: 100px;
 }
 
@@ -291,7 +292,7 @@ h1 {
 
 .about-text p {
   font-size: 20px;
-  line-height: 1.6;
+  line-height: 24px;
 }
 
 footer {
