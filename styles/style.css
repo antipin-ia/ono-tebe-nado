@@ -15,7 +15,7 @@ header {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin-right: 36px;
+  margin-right: 50px;
 }
 
 .header-menu li {
@@ -118,7 +118,7 @@ h1 {
   display: block;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin-left: -50px;
 }
 
 .cover-content_emphasis {
@@ -139,7 +139,7 @@ h1 {
 }
 
 .cover-subtext {
-  margin-top: 135px;
+  margin-top: 130px;
   display: flex;
   width: 100%;
   padding-left: 28px;
@@ -303,6 +303,10 @@ h1 {
 .about-text p {
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 10px;
+}
+.about-text p:last-child {
+  margin-bottom: 0;
 }
 
 footer {
