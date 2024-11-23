@@ -9,7 +9,6 @@ header {
 .header_nav {
   flex: 1;
   display: inline-block;
-  margin-right: 36px;
 }
 
 .header-menu {
@@ -42,12 +41,10 @@ header {
   width: 148px;
   height: 105px;
   flex: 0 0 auto;
-  margin: 0 auto;
+  margin-left: 36px;
 }
 
 .header-info {
-  flex: 0 0 auto;
-  margin-left: auto;
   font-style: normal;
   text-align: left;
   text-underline-offset: 2px;
@@ -57,7 +54,9 @@ header {
 }
 
 .header-info p {
-  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: left;
   padding-left: 184px;
 }
 
@@ -257,13 +256,13 @@ h1 {
   font-weight: 400;
   color: black;
 }
-/*не понимаю что не так с этой секцией, я 100 раз все отступы перепроверил и все равно что-то не так*/
+
 .about {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 35px 24px 150px;
-
+  padding: 35px 24px 0;
+  margin-bottom: 180px;
 }
 
 .about-content {
@@ -310,12 +309,11 @@ h1 {
 }
 
 footer {
-  padding: 0 50px 0;
+  padding: 0 50px 88px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 88px;
 }
 
 .footer-content {
