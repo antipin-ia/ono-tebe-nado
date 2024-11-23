@@ -110,7 +110,7 @@ h1 {
 }
 
 .cover-content_text {
-
+  display: block;
   text-transform: uppercase;
 }
 
@@ -131,6 +131,11 @@ h1 {
 .letter-spacing {
   display: inline-block;
   margin-left: 40px;
+}
+
+.last-letter-spacing {
+  margin-right: 0;
+  letter-spacing: 0px;
 }
 
 .cover-subtext {
