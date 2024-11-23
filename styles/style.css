@@ -252,9 +252,9 @@ h1 {
 .about {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 1052px;
-  padding: 35px 0 180px 47px;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 35px 0 180px 0px;
 }
 
 .about-content {
@@ -280,7 +280,7 @@ h1 {
 }
 
 .about-text {
-  max-width: 680px;
+  max-width: 693px;
   padding-top: 100px;
 }
 
