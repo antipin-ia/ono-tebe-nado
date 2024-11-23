@@ -15,6 +15,7 @@ header {
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin-right: 36px;
 }
 
 .header-menu li {
@@ -135,6 +136,8 @@ h1 {
 .cover-subtext {
   margin-top: 135px;
   display: flex;
+  width: 100%;
+  padding-left: 28px;
   align-items: center;
   text-transform: uppercase;
 }
@@ -145,7 +148,7 @@ h1 {
   font-weight: 300;
   font-size: 22px;
   margin-right: 79px;
-  word-spacing: 20px;
+  word-spacing: 18px;
 }
 
 .button-stav {
@@ -255,7 +258,7 @@ h1 {
   align-items: center;
   width: 100%;
   padding: 35px 24px 0px;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }
 
 .about-content {
