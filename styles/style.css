@@ -9,13 +9,13 @@ header {
 .header_nav {
   flex: 1;
   display: inline-block;
+  margin-right: 36px;
 }
 
 .header-menu {
   list-style-type: none;
   display: flex;
   padding: 0;
-  margin-right: 50px;
 }
 
 .header-menu li {
@@ -262,8 +262,8 @@ h1 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 35px 24px 0px;
-  margin-bottom: 150px;
+  padding: 35px 24px 150px;
+
 }
 
 .about-content {
@@ -303,7 +303,7 @@ h1 {
 .about-text p {
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .about-text p:last-child {
   margin-bottom: 0;
