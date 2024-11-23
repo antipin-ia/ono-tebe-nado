@@ -69,7 +69,7 @@ main {
   background-image: url('../images/cover.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 757px;
+  max-height: 757px;
   width: 100%;
   margin: 96px auto 0;
   display: flex;
@@ -252,14 +252,15 @@ h1 {
 .about {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   width: 100%;
-  padding: 35px 0 180px 0px;
+  padding: 35px 24px 0px;
+  margin-bottom: 170px;
 }
 
 .about-content {
   display: flex;
-  max-width: 1000px;
+  min-width: 1052px;
+  padding-left: 47px;
 }
 
 .back-logo {
