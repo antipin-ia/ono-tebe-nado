@@ -9,8 +9,8 @@ header {
 
 .header_nav {
   flex: 1;
-  display: flex;
-  justify-content: flex-start;
+  display: inline-block;
+  width: 392px;
 }
 
 .header-menu {
@@ -21,7 +21,8 @@ header {
 }
 
 .header-menu li {
-  margin-right: 20px;
+  margin-right: 10px;
+  font-size: 18px;
   list-style-position: inside;
 }
 
@@ -75,9 +76,10 @@ main {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 165px 50px 50px;
+  padding: 165px 50px 51px;
   color: white;
-  margin-bottom: 160px;
+  margin-bottom: 179px;
+  z-index: 0;
 }
 
 .overlay::before {
@@ -102,13 +104,13 @@ h1 {
   line-height: 1.2;
   font-size: 100px;
   width: 1000px;
-  letter-spacing: 10px;
+  letter-spacing: 25px;
   text-transform: uppercase;
   color: white;
 }
 
 .cover-content_text {
-  display: inline-block;
+
   text-transform: uppercase;
 }
 
@@ -132,7 +134,7 @@ h1 {
 }
 
 .cover-subtext {
-  margin-top: 147px;
+  margin-top: 135px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
