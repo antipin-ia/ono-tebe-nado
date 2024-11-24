@@ -52,9 +52,8 @@
 }
 
 .header__logo {
-  justify-self: center;
-  display: flex;
-  justify-content: center;
+  justify-self: start;
+  margin-left: 36px; 
 }
 
 .header__logo-image {
